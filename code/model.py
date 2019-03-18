@@ -35,6 +35,7 @@ def calc_rand_list(datalist):
     for x in range(0, 300):
         datatotal += float(datalist[x])
     mean = datatotal / 300
-    return numpy.random.exponential(mean)
+    return numpy.random.exponential(mean, 1)
+
 
 
