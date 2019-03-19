@@ -19,14 +19,16 @@ class Inspector1(object):
             li = [workstation_1.component_container, workstation_2.component_container_1,
                   workstation_3.component_container_1]
             # Finds the container with the least number of type 1 components
-            container_to_use = min(li, key=attrgetter('level'))
             yield self.env.timeout(service_time)
-            yield container_to_use.put(1)
-            if container_to_use is workstation_1.component_container:
+            if workstation_1.component_container.level <= workstation_2.component_container_1.level or workstation_1.\
+                    component_container.level <= workstation_3.component_container_1.level:
+                yield workstation_1.component_container.put(1)
                 print('Added component 1 to workstation 1')
-            elif container_to_use is workstation_2.component_container_1:
+            elif workstation_2.component_container_1.level <= workstation_3.component_container_1.level:
+                yield workstation_2.component_container_1.put(1)
                 print('Added component 1 to workstation 2')
-            elif container_to_use is workstation_3.component_container_1:
+            else:
+                yield workstation_3.component_container_1.put(1)
                 print('Added component 1 to workstation 3')
 
 

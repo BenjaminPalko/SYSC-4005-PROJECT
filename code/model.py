@@ -10,6 +10,7 @@ def inspect2_comp2():
     datalist = open('servinsp22.dat').read().splitlines()
     return calc_rand_list(datalist)
 
+
 def inspect2_comp3():
     datalist = open('servinsp23.dat').read().splitlines()
     return calc_rand_list(datalist)
