@@ -1,0 +1,32 @@
+
+//  main.py
+'''
+    logger.info('\n====================\n' +
+                ' Simulation results' +
+                '\n====================\n')
+    logger.info('Execution times\n'
+                'Inspector 1 {} \nInspector 22 {} \nInspector 23 {} '
+                '\nWorkstation 1 {} \nWorkstation 2 {} \nWorkstation 3 {}'
+                .format(simulation_output.inspector_1_service_times,
+                        simulation_output.inspector_22_service_times,
+                        simulation_output.inspector_23_service_times,
+                        simulation_output.workstation_1_service_times,
+                        simulation_output.workstation_2_service_times,
+                        simulation_output.workstation_3_service_times))
+    logger.info('\nAverage service times:\n' +
+                'Inspector 1 - {}, Inspector 2 - {}, \nWorkstation 1 - {}, Workstation 2 - {}, Workstation 3 - {}\n'
+                .format(
+                    outputs["inspector_1_service_times"],
+                    outputs["inspector_22_service_times"],
+                    outputs["inspector_23_service_times"],
+                    outputs["workstation_1_service_times"],
+                    outputs["workstation_2_service_times"],
+                    outputs["workstation_3_service_times"]) +
+                'Total execution time: {}\n'
+                .format(SIMULATION_TIME) +
+                '\nProducts produced:\n'
+                '{} of product 1, {} of product 2, {} of product 3\n'
+                .format(
+                    simulation_output.product_1,
+                    simulation_output.product_2,
+                    simulation_output.product_3))'''

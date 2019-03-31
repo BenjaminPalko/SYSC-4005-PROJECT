@@ -1,0 +1,311 @@
+2019-03-31 11:21:38,606 [MainThread  ] [INFO ]  Creating simulation environment
+2019-03-31 11:21:38,606 [MainThread  ] [INFO ]  Starting iteration 1
+2019-03-31 11:21:38,677 [MainThread  ] [INFO ]  Starting iteration 2
+2019-03-31 11:21:38,745 [MainThread  ] [INFO ]  Starting iteration 3
+2019-03-31 11:21:38,806 [MainThread  ] [INFO ]  Starting iteration 4
+2019-03-31 11:21:38,865 [MainThread  ] [INFO ]  Starting iteration 5
+2019-03-31 11:21:38,930 [MainThread  ] [INFO ]  Starting iteration 6
+2019-03-31 11:21:38,990 [MainThread  ] [INFO ]  Starting iteration 7
+2019-03-31 11:21:39,055 [MainThread  ] [INFO ]  Starting iteration 8
+2019-03-31 11:21:39,113 [MainThread  ] [INFO ]  Starting iteration 9
+2019-03-31 11:21:39,161 [MainThread  ] [INFO ]  Starting iteration 10
+2019-03-31 11:21:39,228 [MainThread  ] [INFO ]  Starting iteration 11
+2019-03-31 11:21:39,275 [MainThread  ] [INFO ]  Starting iteration 12
+2019-03-31 11:21:39,333 [MainThread  ] [INFO ]  Starting iteration 13
+2019-03-31 11:21:39,389 [MainThread  ] [INFO ]  Starting iteration 14
+2019-03-31 11:21:39,444 [MainThread  ] [INFO ]  Starting iteration 15
+2019-03-31 11:21:39,494 [MainThread  ] [INFO ]  Starting iteration 16
+2019-03-31 11:21:39,549 [MainThread  ] [INFO ]  Starting iteration 17
+2019-03-31 11:21:39,614 [MainThread  ] [INFO ]  Starting iteration 18
+2019-03-31 11:21:39,679 [MainThread  ] [INFO ]  Starting iteration 19
+2019-03-31 11:21:39,735 [MainThread  ] [INFO ]  Starting iteration 20
+2019-03-31 11:21:39,785 [MainThread  ] [INFO ]  Starting iteration 21
+2019-03-31 11:21:39,843 [MainThread  ] [INFO ]  Starting iteration 22
+2019-03-31 11:21:39,889 [MainThread  ] [INFO ]  Starting iteration 23
+2019-03-31 11:21:39,951 [MainThread  ] [INFO ]  Starting iteration 24
+2019-03-31 11:21:40,023 [MainThread  ] [INFO ]  Starting iteration 25
+2019-03-31 11:21:40,091 [MainThread  ] [INFO ]  Simulation ended, collecting output
+2019-03-31 11:21:40,091 [MainThread  ] [INFO ]  Calculating bias for data
+2019-03-31 11:21:40,091 [MainThread  ] [INFO ]  PE is biased for inspector_1_service_times with a difference of  0.5000900000000073
+2019-03-31 11:21:40,092 [MainThread  ] [INFO ]  PE is biased for inspector_22_service_times with a difference of  0.48490333333332103
+2019-03-31 11:21:40,092 [MainThread  ] [INFO ]  PE is biased for inspector_23_service_times with a difference of  1.889243333333333
+2019-03-31 11:21:40,093 [MainThread  ] [INFO ]  PE is biased for workstation_1_service_times with a difference of  0.08458333333333545
+2019-03-31 11:21:40,093 [MainThread  ] [INFO ]  PE is biased for workstation_2_service_times with a difference of  0.6276066666666651
+2019-03-31 11:21:40,094 [MainThread  ] [INFO ]  PE is biased for workstation_3_service_times with a difference of  3.8675800000000047
+2019-03-31 11:21:40,094 [MainThread  ] [INFO ]  inspector_1_service_times average 10.858237755038976
+2019-03-31 11:21:40,094 [MainThread  ] [INFO ]  inspector_22_service_times average 15.052309852944177
+2019-03-31 11:21:40,094 [MainThread  ] [INFO ]  inspector_23_service_times average 22.52155850033757
+2019-03-31 11:21:40,094 [MainThread  ] [INFO ]  workstation_1_service_times average 4.6893792085584085
+2019-03-31 11:21:40,095 [MainThread  ] [INFO ]  workstation_2_service_times average 10.465460637977968
+2019-03-31 11:21:40,095 [MainThread  ] [INFO ]  workstation_3_service_times average 4.928366611155335
+2019-03-31 11:33:43,652 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:33:43,785 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:33:43,943 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:33:44,013 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:33:44,144 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:33:44,211 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:33:44,550 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:19,776 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,043 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,117 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,327 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,389 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,593 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,648 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,762 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,820 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,886 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:20,951 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:21,069 [MainThread  ] [ERROR]  workstation_3_service_times ZeroDivisionError
+Traceback (most recent call last):
+  File "F:\Users\Benjamin\OneDrive\Carleton\OneDrive - Carleton University\SYSC 4005\Project\Deliverable 2\SYSC-4005-PROJECT\code\variables.py", line 25, in get_means
+    means[variable] = sum(self.service_times[variable]) / len(self.service_times[variable])
+ZeroDivisionError: division by zero
+2019-03-31 11:34:45,213 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:45,342 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:45,417 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:45,483 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:45,827 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:46,239 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:46,373 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:46,496 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:46,827 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:34:46,890 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:35:54,172 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 11:35:54,173 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 11:35:54,609 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:35:55,153 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:35:55,222 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:35:55,358 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:35:55,430 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:35:55,481 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:37:41,402 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:37:41,471 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:37:41,924 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:37:42,051 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 11:37:42,447 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:37:42,507 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:37:42,566 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:37:42,693 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:06,480 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:06,953 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:07,021 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:07,311 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:07,584 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:07,682 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:07,943 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:08,561 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:23,037 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:23,113 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:23,184 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:23,639 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:23,789 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:23,868 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:24,090 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 11:38:24,090 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 11:38:24,090 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:34,538 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:34,652 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:35,176 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:35,417 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:35,542 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:35,674 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:35,807 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:35,943 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:36,206 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:38,641 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:39,134 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:39,434 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:39,882 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:40,058 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:40,234 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 11:38:40,235 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 11:38:40,561 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:47,168 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:47,428 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:47,844 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:48,221 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:48,520 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:48,657 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:48,720 [MainThread  ] [WARNI]  inspector_23_service_times ZeroDivisionError
+2019-03-31 11:38:48,720 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:38:48,797 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:38,427 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:38,509 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:38,566 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:38,643 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:39,071 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:39,394 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:39,503 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:39,668 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:39,726 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:39,860 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:39,925 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:48,211 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:48,284 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:48,485 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:48,545 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:48,610 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:48,864 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:48,973 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:49,092 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:49,275 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:49,340 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:49,399 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:49,505 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:49,731 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:54,960 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:55,126 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:55,378 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:55,553 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:55,724 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 11:42:55,725 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 11:42:55,849 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:42:56,373 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:01,687 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:01,771 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 11:43:01,771 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 11:43:02,142 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:02,233 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:02,588 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:02,872 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:02,951 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:03,037 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:03,320 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:03,574 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:03,650 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:03,729 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:15,916 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:16,004 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:16,079 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:16,800 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:16,878 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:17,045 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:17,129 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:17,382 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:17,488 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:17,657 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:24,076 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:24,207 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:24,369 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:24,425 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:24,489 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:24,553 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:24,733 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:24,911 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:25,018 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:43:25,415 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:21,452 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:21,580 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:21,687 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:21,992 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:22,271 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:22,325 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:22,393 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 11:44:22,393 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 11:44:22,447 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:22,510 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:22,563 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:22,605 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:34,969 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:35,044 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:35,125 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:35,205 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:35,277 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:35,360 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:35,604 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:35,682 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:36,199 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:36,631 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:36,706 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:52,780 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:53,094 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:53,399 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:53,724 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:53,782 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:54,030 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:44:54,217 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 11:46:51,362 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 11:46:51,363 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 13:06:09,225 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 13:06:09,226 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 15:58:46,871 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 15:58:47,019 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 15:58:47,019 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
+2019-03-31 15:58:47,161 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 15:58:47,310 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 15:58:47,674 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 15:58:47,747 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 15:58:47,956 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
