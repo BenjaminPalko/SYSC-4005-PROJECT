@@ -22,6 +22,7 @@ def convert_data_to_lists(data):
 #   Checks if this is the main execution script in the program
 if __name__ == '__main__':
     # Simulation variables
+    print("Recommended numbers are 25+ Replications at minimum 5000 seconds")
     REPLICATIONS = int(input("Enter Replications: "))
     REPLICATION_DURATION = int(input("Enter time (sec): "))
     REPLICATION_OUTPUTS = {}
@@ -34,7 +35,7 @@ if __name__ == '__main__':
     fileHandler.setFormatter(logFormatter)
     fileHandler.setLevel("WARNING")
     logger.addHandler(fileHandler)
-0
+
     consoleHandler = logging.StreamHandler()
     consoleHandler.setFormatter(logFormatter)
     logger.addHandler(consoleHandler)
@@ -72,8 +73,6 @@ if __name__ == '__main__':
         #   Simulation End
 
     #   Collect outputs
-    logger.info('Simulation ended, collecting output')
+    logger.info('Simulation ended, collecting output\n')
     simulation_output_dict = convert_data_to_lists(REPLICATION_OUTPUTS)
     performance.calculate_statistics(simulation_output_dict)
-
-    input("Press the Enter key to exit...")

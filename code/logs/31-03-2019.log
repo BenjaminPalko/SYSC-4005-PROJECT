@@ -309,3 +309,5 @@ ZeroDivisionError: division by zero
 2019-03-31 15:58:47,674 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
 2019-03-31 15:58:47,747 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
 2019-03-31 15:58:47,956 [MainThread  ] [WARNI]  workstation_3_service_times ZeroDivisionError
+2019-03-31 16:22:59,408 [MainThread  ] [WARNI]  inspector_22_service_times ZeroDivisionError
+2019-03-31 16:22:59,409 [MainThread  ] [WARNI]  workstation_2_service_times ZeroDivisionError
