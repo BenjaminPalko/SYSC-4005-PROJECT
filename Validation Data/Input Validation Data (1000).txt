@@ -1,0 +1,29 @@
+Inspector 1 Component 1
+Actual Mean:  10.357909999999993
+Random Mean: 10.079975041668858
+Difference(%):  2.683311192423333 
+
+Inspector 2 Component 2
+Actual Mean:  15.53690333333332
+Random Mean: 15.620094035450492
+Difference(%):  0.5354394008405258 
+
+Inspector 2 Component 3
+Actual Mean:  20.632756666666666
+Random Mean: 20.64542696356048
+Difference(%):  0.061408647901546314 
+
+Workstation 1
+Actual Mean:  4.604416666666665
+Random Mean: 4.714386572468703
+Difference(%):  2.388356957313557 
+
+Workstation 2
+Actual Mean:  11.092606666666665
+Random Mean: 11.33934011975059
+Difference(%):  2.2243054360284864 
+
+Workstation 3
+Actual Mean:  8.795580000000005
+Random Mean: 8.824508311756373
+Difference(%):  0.3288960109096702 
