@@ -9,9 +9,9 @@ def validate_inspect1_comp1():
     actual_mean = actual_mean / 300
 
     random_mean = 0
-    for x in range(0,300):
+    for x in range(0,1000):
         random_mean += model.inspect1_comp1()
-    random_mean = random_mean / 300
+    random_mean = random_mean / 1000
 
     print('Inspector 1 Component 1')
     print_mean(actual_mean, random_mean)
@@ -25,9 +25,9 @@ def validate_inspect2_comp2():
     actual_mean = actual_mean / 300
 
     random_mean = 0
-    for x in range(0, 300):
+    for x in range(0, 1000):
         random_mean += model.inspect2_comp2()
-    random_mean = random_mean / 300
+    random_mean = random_mean / 1000
 
     print('Inspector 2 Component 2')
     print_mean(actual_mean, random_mean)
@@ -41,9 +41,9 @@ def validate_inspect2_comp3():
     actual_mean = actual_mean / 300
 
     random_mean = 0
-    for x in range(0, 300):
+    for x in range(0, 1000):
         random_mean += model.inspect2_comp3()
-    random_mean = random_mean / 300
+    random_mean = random_mean / 1000
 
     print('Inspector 2 Component 3')
     print_mean(actual_mean, random_mean)
@@ -57,9 +57,9 @@ def validate_workstation1():
     actual_mean = actual_mean / 300
 
     random_mean = 0
-    for x in range(0, 300):
+    for x in range(0, 1000):
         random_mean += model.workstation1()
-    random_mean = random_mean / 300
+    random_mean = random_mean / 1000
 
     print('Workstation 1')
     print_mean(actual_mean, random_mean)
@@ -73,9 +73,9 @@ def validate_workstation2():
     actual_mean = actual_mean / 300
 
     random_mean = 0
-    for x in range(0, 300):
+    for x in range(0, 1000):
         random_mean += model.workstation2()
-    random_mean = random_mean / 300
+    random_mean = random_mean / 1000
 
     print('Workstation 2')
     print_mean(actual_mean, random_mean)
@@ -89,9 +89,9 @@ def validate_workstation3():
     actual_mean = actual_mean / 300
 
     random_mean = 0
-    for x in range(0, 300):
+    for x in range(0, 1000):
         random_mean += model.workstation3()
-    random_mean = random_mean / 300
+    random_mean = random_mean / 1000
 
     print('Workstation 3')
     print_mean(actual_mean, random_mean)
