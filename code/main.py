@@ -63,7 +63,7 @@ if __name__ == '__main__':
         workstation_2 = simulation.Workstation2(main_env, logger, REPLICATION_VARIABLES)
         workstation_3 = simulation.Workstation3(main_env, logger, REPLICATION_VARIABLES)
         inspector_1 = simulation.Inspector1(main_env, logger, REPLICATION_VARIABLES,
-                                            workstation_1, workstation_2, workstation_3, True)
+                                            workstation_1, workstation_2, workstation_3, False)
         inspector_2 = simulation.Inspector2(main_env, logger, REPLICATION_VARIABLES, workstation_2, workstation_3)
         logger.debug("Simulation classes created")
 
