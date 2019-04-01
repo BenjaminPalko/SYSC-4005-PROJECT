@@ -1,6 +1,6 @@
 import simpy
 import simulation
-from variables import SimulationVariables
+from variables import ReplicationVariables
 import logging, coloredlogs
 from datetime import datetime
 import performance
@@ -21,12 +21,6 @@ def convert_data_to_lists(data):
 
 #   Checks if this is the main execution script in the program
 if __name__ == '__main__':
-    # Simulation variables
-    print("Enter nothing for default simulation values (25, 28'000)")
-    REPLICATIONS = int(input("Enter Replications: ") or "25")
-    REPLICATION_DURATION = int(input("Enter time (sec): ") or "28000")
-    REPLICATION_OUTPUTS = {}
-
     #   Logging Setup
     logFormatter = logging.Formatter("%(asctime)s [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s")
     logger = logging.getLogger()
@@ -44,6 +38,14 @@ if __name__ == '__main__':
 
     performance.logger = logger
 
+    # Simulation variables
+    print("Enter nothing for default simulation values (25, 28'000)")
+    REPLICATIONS = int(input("Enter Replications: ") or "25")
+    REPLICATION_DURATION = int(input("Enter time (sec): ") or "28000")
+    REPLICATION_OUTPUTS = {}
+
+    SIMULATION_VARIABLES = []
+
     #   Start Program
     logger.info("Creating simulation environment")
 
@@ -53,15 +55,15 @@ if __name__ == '__main__':
         #   Environment
         logger.info('Starting iteration ' + str(iteration))
         main_env = simpy.Environment()
-        simulation_output = SimulationVariables(logger)
+        REPLICATION_VARIABLES = ReplicationVariables(logger)
 
         # Class instantiations
-        workstation_1 = simulation.Workstation1(main_env, logger, simulation_output)
-        workstation_2 = simulation.Workstation2(main_env, logger, simulation_output)
-        workstation_3 = simulation.Workstation3(main_env, logger, simulation_output)
-        inspector_1 = simulation.Inspector1(main_env, logger, simulation_output,
+        workstation_1 = simulation.Workstation1(main_env, logger, REPLICATION_VARIABLES)
+        workstation_2 = simulation.Workstation2(main_env, logger, REPLICATION_VARIABLES)
+        workstation_3 = simulation.Workstation3(main_env, logger, REPLICATION_VARIABLES)
+        inspector_1 = simulation.Inspector1(main_env, logger, REPLICATION_VARIABLES,
                                             workstation_1, workstation_2, workstation_3, False)
-        inspector_2 = simulation.Inspector2(main_env, logger, simulation_output, workstation_2, workstation_3)
+        inspector_2 = simulation.Inspector2(main_env, logger, REPLICATION_VARIABLES, workstation_2, workstation_3)
         logger.debug("Simulation classes created")
 
         # Run simulation
@@ -69,10 +71,10 @@ if __name__ == '__main__':
         main_env.run(until=REPLICATION_DURATION)  # 'until' is simulation duration
 
         #   Save iteration variables
-        REPLICATION_OUTPUTS[iteration] = simulation_output.get_means()
+        # REPLICATION_OUTPUTS[iteration] = simulation_output.get_means()
+        SIMULATION_VARIABLES.append(REPLICATION_VARIABLES)
         #   Simulation End
 
     #   Collect outputs
     logger.info('Simulation ended, collecting output\n')
-    simulation_output_dict = convert_data_to_lists(REPLICATION_OUTPUTS)
-    performance.calculate_statistics(simulation_output_dict)
+    performance.calculate_statistics(SIMULATION_VARIABLES)
