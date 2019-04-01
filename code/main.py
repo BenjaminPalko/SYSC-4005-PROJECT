@@ -4,6 +4,7 @@ from variables import ReplicationVariables
 import logging, coloredlogs
 from datetime import datetime
 import performance
+import numpy
 
 
 def convert_data_to_lists(data):
@@ -39,8 +40,8 @@ if __name__ == '__main__':
     performance.logger = logger
 
     # Simulation variables
-    print("Enter nothing for default simulation values (25, 28'000)")
-    REPLICATIONS = int(input("Enter Replications: ") or "25")
+    print("Enter nothing for default simulation values (1000, 28'000)")
+    REPLICATIONS = int(input("Enter Replications: ") or "1000")
     REPLICATION_DURATION = int(input("Enter time (sec): ") or "28000")
     REPLICATION_OUTPUTS = {}
 
@@ -62,7 +63,7 @@ if __name__ == '__main__':
         workstation_2 = simulation.Workstation2(main_env, logger, REPLICATION_VARIABLES)
         workstation_3 = simulation.Workstation3(main_env, logger, REPLICATION_VARIABLES)
         inspector_1 = simulation.Inspector1(main_env, logger, REPLICATION_VARIABLES,
-                                            workstation_1, workstation_2, workstation_3, False)
+                                            workstation_1, workstation_2, workstation_3, True)
         inspector_2 = simulation.Inspector2(main_env, logger, REPLICATION_VARIABLES, workstation_2, workstation_3)
         logger.debug("Simulation classes created")
 
@@ -78,3 +79,17 @@ if __name__ == '__main__':
     #   Collect outputs
     logger.info('Simulation ended, collecting output\n')
     performance.calculate_statistics(SIMULATION_VARIABLES)
+    service_time_means = {
+        "inspector_1": [],
+        "inspector_22": [],
+        "inspector_23": [],
+        "workstation_1": [],
+        "workstation_2": [],
+        "workstation_3": [],
+
+    }
+    for x in SIMULATION_VARIABLES:
+        for key, value in x.service_times.items():
+            service_time_means[key].extend(value)
+    for key, value in service_time_means.items():
+        logger.info("Average service time for " + key + ": " + str(numpy.mean(value)))
