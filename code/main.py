@@ -22,9 +22,9 @@ def convert_data_to_lists(data):
 #   Checks if this is the main execution script in the program
 if __name__ == '__main__':
     # Simulation variables
-    print("Recommended numbers are 25+ Replications at minimum 5000 seconds")
-    REPLICATIONS = int(input("Enter Replications: "))
-    REPLICATION_DURATION = int(input("Enter time (sec): "))
+    print("Enter nothing for default simulation values (25, 28'000)")
+    REPLICATIONS = int(input("Enter Replications: ") or "25")
+    REPLICATION_DURATION = int(input("Enter time (sec): ") or "28000")
     REPLICATION_OUTPUTS = {}
 
     #   Logging Setup
